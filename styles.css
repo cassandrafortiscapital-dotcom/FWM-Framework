@@ -1,0 +1,44 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #ffffff; color: #000000;
+  font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.5; }
+a { color: #000; }
+header { border-bottom: 1px solid #000; }
+nav { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 18px;
+  max-width: 900px; margin: 0 auto; padding: 12px 20px; }
+nav .brand { font-weight: bold; text-decoration: none; margin-right: 10px; }
+nav ul.menu { list-style: none; display: flex; flex-wrap: wrap; align-items: center;
+  gap: 4px 16px; margin: 0; padding: 0; }
+nav ul.menu > li { position: relative; }
+nav ul.menu a, nav .top { text-decoration: none; color: #000; cursor: pointer;
+  display: inline-block; padding: 4px 0; }
+nav ul.menu a:hover, nav .top:hover { text-decoration: underline; }
+nav .btn { border: 1px solid #000; padding: 4px 10px !important; }
+ul.sub { display: none; position: absolute; top: 100%; left: 0; z-index: 10;
+  background: #fff; border: 1px solid #000; list-style: none; margin: 0; padding: 6px 0;
+  min-width: 190px; }
+li.has-sub:hover ul.sub, li.has-sub:focus-within ul.sub { display: block; }
+ul.sub li a { display: block; padding: 5px 14px; white-space: nowrap; }
+main { max-width: 900px; margin: 0 auto; padding: 26px 20px 60px; }
+.crumb { font-size: 13px; color: #555; margin: 0 0 4px; text-transform: uppercase; letter-spacing: .06em; }
+h1 { font-size: 28px; margin: 0 0 6px; }
+.intro { color: #333; margin: 0 0 8px; }
+section { margin-top: 26px; }
+h2 { font-size: 20px; margin: 0 0 8px; border-bottom: 1px solid #ccc; padding-bottom: 4px; }
+.ph { border: 1px dashed #999; color: #555; padding: 14px 16px; margin: 6px 0; }
+.ph b { color: #000; }
+.links { margin: 8px 0 0; font-size: 15px; }
+.links .lbl { color: #555; }
+.links a { margin-right: 4px; }
+.cards { display: flex; flex-wrap: wrap; gap: 10px; margin: 8px 0; }
+.card { border: 1px solid #000; padding: 10px 12px; min-width: 150px; }
+.card a { text-decoration: none; font-weight: bold; }
+.card .meta { font-size: 13px; color: #555; }
+form label { display: block; margin: 10px 0 3px; }
+form input, form textarea { width: 100%; padding: 6px; border: 1px solid #000; font: inherit; }
+form button { margin-top: 12px; border: 1px solid #000; background: #fff; padding: 6px 14px; font: inherit; cursor: pointer; }
+ol.items { padding-left: 20px; }
+ol.items li { margin: 3px 0; }
+footer { border-top: 1px solid #000; }
+footer .inner { max-width: 900px; margin: 0 auto; padding: 16px 20px; font-size: 14px; color: #333; }
+footer a { color: #333; }
+.note { font-size: 13px; color: #777; margin-top: 4px; }
