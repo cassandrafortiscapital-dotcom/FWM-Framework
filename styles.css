@@ -4,12 +4,13 @@ body { margin: 0; background: #F4F1EA; color: #000; font-family: 'Montserrat','H
 a { color: #000; }
 header { border-bottom: 1px solid #000; background: #F4F1EA; }
 nav { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 18px; max-width: 1000px; margin: 0 auto; padding: 12px 20px; }
-nav .brand { font-weight: 700; text-decoration: none; margin-right: 10px; letter-spacing: .04em; }
+nav .brand { font-family: 'Cinzel', Georgia, serif; font-weight: 400; color: #1F2D4D; text-decoration: none; margin-right: 10px; letter-spacing: .06em; display: inline-flex; align-items: center; gap: 9px; }
+nav .brandlogo { height: 30px; width: auto; display: block; }
 nav ul.menu { list-style: none; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 16px; margin: 0; padding: 0; }
 nav ul.menu > li { position: relative; }
-nav ul.menu a, nav .top { text-decoration: none; color: #000; cursor: pointer; display: inline-block; padding: 4px 0; }
+nav ul.menu a, nav .top { text-decoration: none; color: #1F2D4D; cursor: pointer; display: inline-block; padding: 4px 0; }
 nav ul.menu a:hover, nav .top:hover { text-decoration: underline; }
-nav .btn { border: 1px solid #000; padding: 4px 12px !important; }
+nav .btn { border: 1px solid #1F2D4D; color: #1F2D4D; padding: 4px 12px !important; }
 ul.sub { display: none; position: absolute; top: 100%; left: 0; z-index: 10; background: #F4F1EA; border: 1px solid #000; list-style: none; margin: 0; padding: 6px 0; min-width: 200px; }
 li.has-sub:hover ul.sub, li.has-sub:focus-within ul.sub { display: block; }
 ul.sub li a { display: block; padding: 5px 14px; white-space: nowrap; }
@@ -109,7 +110,7 @@ footer { border-top: 1px solid #000; margin-top: 40px; }
 .finner { max-width: 1000px; margin: 0 auto; padding: 28px 20px 24px; }
 .ftop { display: flex; flex-wrap: wrap; gap: 28px; justify-content: space-between; }
 .fbrand { max-width: 320px; }
-.fname { font-weight: 700; letter-spacing: .06em; }
+.fname { font-family: 'Cinzel', Georgia, serif; font-weight: 400; color: #1F2D4D; letter-spacing: .06em; }
 .ftag { color: #6b6657; margin: 4px 0 12px; }
 .faddr { font-size: 13px; color: #4a463c; line-height: 1.7; }
 .fsocial { margin-top: 10px; font-size: 13px; }
