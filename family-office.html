@@ -54,12 +54,17 @@
 .fb-dial .fx-core{fill:#1F2D4D}
 .fb-dial .fx-core2{fill:none;stroke:rgba(244,241,234,.45);stroke-width:1}
 .fb-dial .fx-name{font-family:'Cinzel',Georgia,serif;font-size:21px;letter-spacing:.26em;fill:#F4F1EA;font-weight:600}
+.fb-dial .fb-seg{cursor:pointer;outline:none}
 .fb-dial .fb-seg path{fill:#E4DECF;transition:fill .25s}
 .fb-dial .fb-seg line{stroke:#cfc9bc;stroke-width:1.5;transition:stroke .25s}
 .fb-dial .fb-seg text{font-size:15px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;fill:#b3ac9c;transition:fill .25s}
 .fb-dial .fb-seg.complete path{fill:#1F2D4D}
 .fb-dial .fb-seg.complete line{stroke:#1F2D4D}
 .fb-dial .fb-seg.complete text{fill:#1F2D4D}
+.fb-dial .fb-seg.hover path{fill:#1F2D4D}
+.fb-dial .fb-seg.hover text{fill:#1F2D4D}
+.fb-dial .fb-seg.complete.hover path{fill:#33456b}
+.fb-dial .fb-seg:focus-visible text{text-decoration:underline}
 .fb-dial .fb-summary{min-height:3em;max-width:54ch;margin:30px auto 32px;font-size:19px;color:#4a463c}
 .fb-dial .fb-summary b{display:block;font-size:15px;letter-spacing:.2em;text-transform:uppercase;color:#1F2D4D;margin-bottom:4px}
 @media (prefers-reduced-motion:reduce){.fb-dial .fb-seg path,.fb-dial .fb-seg line,.fb-dial .fb-seg text,.fb-dial .fb-chip{transition:none}}
@@ -81,14 +86,14 @@
     <circle class="fx-core2" cx="480" cy="380" r="154"></circle>
     <image href="shield-light.png" x="414" y="276" width="132" height="170"></image>
     <text class="fx-name" x="484" y="482" text-anchor="middle">FORTIS</text>
-<g class="fb-seg" data-svc="FP"><path d="M398.8,162.7 A232,232 0 0 1 561.2,162.7 L550.0,192.7 A200,200 0 0 0 410.0,192.7Z"></path><line x1="480.0" y1="142.0" x2="480.0" y2="130.0"></line><text x="480.0" y="86.0" text-anchor="middle"><tspan x="480.0">Financial</tspan><tspan x="480.0" dy="20">Planning</tspan></text></g>
-<g class="fb-seg" data-svc="IM"><path d="M576.2,168.9 A232,232 0 0 1 691.1,283.8 L662.0,297.1 A200,200 0 0 0 562.9,198.0Z"></path><line x1="648.3" y1="211.7" x2="656.8" y2="203.2"></line><text x="672.3" y="177.7" text-anchor="start"><tspan x="672.3">Investment</tspan><tspan x="672.3" dy="20">Management</tspan></text></g>
-<g class="fb-seg" data-svc="TXP"><path d="M697.3,298.8 A232,232 0 0 1 697.3,461.2 L667.3,450.0 A200,200 0 0 0 667.3,310.0Z"></path><line x1="718.0" y1="380.0" x2="730.0" y2="380.0"></line><text x="752.0" y="374.0" text-anchor="start"><tspan x="752.0">Tax</tspan><tspan x="752.0" dy="20">Planning</tspan></text></g>
-<g class="fb-seg" data-svc="EST"><path d="M691.1,476.2 A232,232 0 0 1 576.2,591.1 L562.9,562.0 A200,200 0 0 0 662.0,462.9Z"></path><line x1="648.3" y1="548.3" x2="656.8" y2="556.8"></line><text x="672.3" y="574.3" text-anchor="start"><tspan x="672.3">Estate</tspan><tspan x="672.3" dy="20">Planning</tspan></text></g>
-<g class="fb-seg" data-svc="RISK"><path d="M561.2,597.3 A232,232 0 0 1 398.8,597.3 L410.0,567.3 A200,200 0 0 0 550.0,567.3Z"></path><line x1="480.0" y1="618.0" x2="480.0" y2="630.0"></line><text x="480.0" y="666.0" text-anchor="middle"><tspan x="480.0">Risk</tspan><tspan x="480.0" dy="20">Management</tspan></text></g>
-<g class="fb-seg" data-svc="EDU"><path d="M383.8,591.1 A232,232 0 0 1 268.9,476.2 L298.0,462.9 A200,200 0 0 0 397.1,562.0Z"></path><line x1="311.7" y1="548.3" x2="303.2" y2="556.8"></line><text x="287.7" y="574.3" text-anchor="end"><tspan x="287.7">Education</tspan><tspan x="287.7" dy="20">Funding</tspan></text></g>
-<g class="fb-seg" data-svc="RE"><path d="M262.7,461.2 A232,232 0 0 1 262.7,298.8 L292.7,310.0 A200,200 0 0 0 292.7,450.0Z"></path><line x1="242.0" y1="380.0" x2="230.0" y2="380.0"></line><text x="208.0" y="374.0" text-anchor="end"><tspan x="208.0">Real</tspan><tspan x="208.0" dy="20">Estate</tspan></text></g>
-<g class="fb-seg" data-svc="TXR"><path d="M268.9,283.8 A232,232 0 0 1 383.8,168.9 L397.1,198.0 A200,200 0 0 0 298.0,297.1Z"></path><line x1="311.7" y1="211.7" x2="303.2" y2="203.2"></line><text x="287.7" y="177.7" text-anchor="end"><tspan x="287.7">Tax</tspan><tspan x="287.7" dy="20">Preparation</tspan></text></g>
+<g class="fb-seg" tabindex="0" data-svc="FP" data-name="Financial Planning" data-desc="A written plan for cash flow, goals and timelines."><path d="M398.8,162.7 A232,232 0 0 1 561.2,162.7 L550.0,192.7 A200,200 0 0 0 410.0,192.7Z"></path><line x1="480.0" y1="142.0" x2="480.0" y2="130.0"></line><text x="480.0" y="86.0" text-anchor="middle"><tspan x="480.0">Financial</tspan><tspan x="480.0" dy="20">Planning</tspan></text></g>
+<g class="fb-seg" tabindex="0" data-svc="IM" data-name="Investment Management" data-desc="Portfolios managed around your plan and risk tolerance."><path d="M576.2,168.9 A232,232 0 0 1 691.1,283.8 L662.0,297.1 A200,200 0 0 0 562.9,198.0Z"></path><line x1="648.3" y1="211.7" x2="656.8" y2="203.2"></line><text x="672.3" y="177.7" text-anchor="start"><tspan x="672.3">Investment</tspan><tspan x="672.3" dy="20">Management</tspan></text></g>
+<g class="fb-seg" tabindex="0" data-svc="TXP" data-name="Tax Planning" data-desc="Year-round strategy, not just at filing time."><path d="M697.3,298.8 A232,232 0 0 1 697.3,461.2 L667.3,450.0 A200,200 0 0 0 667.3,310.0Z"></path><line x1="718.0" y1="380.0" x2="730.0" y2="380.0"></line><text x="752.0" y="374.0" text-anchor="start"><tspan x="752.0">Tax</tspan><tspan x="752.0" dy="20">Planning</tspan></text></g>
+<g class="fb-seg" tabindex="0" data-svc="EST" data-name="Estate Planning" data-desc="Beneficiaries, trusts and transfer goals, reviewed with your attorney."><path d="M691.1,476.2 A232,232 0 0 1 576.2,591.1 L562.9,562.0 A200,200 0 0 0 662.0,462.9Z"></path><line x1="648.3" y1="548.3" x2="656.8" y2="556.8"></line><text x="672.3" y="574.3" text-anchor="start"><tspan x="672.3">Estate</tspan><tspan x="672.3" dy="20">Planning</tspan></text></g>
+<g class="fb-seg" tabindex="0" data-svc="RISK" data-name="Risk Management" data-desc="Insurance coverage reviewed for gaps in life, disability and property."><path d="M561.2,597.3 A232,232 0 0 1 398.8,597.3 L410.0,567.3 A200,200 0 0 0 550.0,567.3Z"></path><line x1="480.0" y1="618.0" x2="480.0" y2="630.0"></line><text x="480.0" y="666.0" text-anchor="middle"><tspan x="480.0">Risk</tspan><tspan x="480.0" dy="20">Management</tspan></text></g>
+<g class="fb-seg" tabindex="0" data-svc="EDU" data-name="Education Funding" data-desc="529 plans and other ways to prepare for tuition."><path d="M383.8,591.1 A232,232 0 0 1 268.9,476.2 L298.0,462.9 A200,200 0 0 0 397.1,562.0Z"></path><line x1="311.7" y1="548.3" x2="303.2" y2="556.8"></line><text x="287.7" y="574.3" text-anchor="end"><tspan x="287.7">Education</tspan><tspan x="287.7" dy="20">Funding</tspan></text></g>
+<g class="fb-seg" tabindex="0" data-svc="RE" data-name="Real Estate" data-desc="Property decisions weighed within the whole plan."><path d="M262.7,461.2 A232,232 0 0 1 262.7,298.8 L292.7,310.0 A200,200 0 0 0 292.7,450.0Z"></path><line x1="242.0" y1="380.0" x2="230.0" y2="380.0"></line><text x="208.0" y="374.0" text-anchor="end"><tspan x="208.0">Real</tspan><tspan x="208.0" dy="20">Estate</tspan></text></g>
+<g class="fb-seg" tabindex="0" data-svc="TXR" data-name="Tax Preparation" data-desc="Returns prepared in-house, coordinated with your advisor."><path d="M268.9,283.8 A232,232 0 0 1 383.8,168.9 L397.1,198.0 A200,200 0 0 0 298.0,297.1Z"></path><line x1="311.7" y1="211.7" x2="303.2" y2="203.2"></line><text x="287.7" y="177.7" text-anchor="end"><tspan x="287.7">Tax</tspan><tspan x="287.7" dy="20">Preparation</tspan></text></g>
   </svg>
   <p class="fb-summary" aria-live="polite"><b>Build your plan</b>Select what applies to you &mdash; and watch your family office come together.</p>
 <script>
@@ -106,7 +111,10 @@
     else if(names.length>=ORDER.length){ sum.innerHTML='<b>The whole picture</b>Every part of your financial life, coordinated by one team and one point of contact.'; }
     else { sum.innerHTML='<b>One team, coordinating</b>'+names.join(' &middot; '); }
   }
+  function showInfo(g){ segs.forEach(function(s){s.classList.toggle('hover',s===g);}); sum.innerHTML='<b>'+g.dataset.name+'</b>'+g.dataset.desc; }
+  function clearInfo(){ segs.forEach(function(s){s.classList.remove('hover');}); recompute(); }
   chips.forEach(function(c){ c.addEventListener('click',function(){ var on=!c.classList.contains('on'); c.classList.toggle('on',on); c.setAttribute('aria-pressed',on); recompute(); }); });
+  segs.forEach(function(g){ g.addEventListener('mouseenter',function(){showInfo(g);}); g.addEventListener('mouseleave',clearInfo); g.addEventListener('focus',function(){showInfo(g);}); g.addEventListener('blur',clearInfo); });
   recompute();
 })();
 </script>
