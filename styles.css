@@ -2,7 +2,7 @@
 html, body { overflow-x: hidden; }
 body { margin: 0; background: #F4F1EA; color: #000; font-family: 'Montserrat','Helvetica Neue',Arial,sans-serif; font-size: 16px; line-height: 1.5; }
 a { color: #000; }
-header { border-bottom: 1px solid #000; background: #F4F1EA; }
+header { border-bottom: 1px solid #000; background: #F4F1EA; position: sticky; top: 0; z-index: 100; }
 nav { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 18px; max-width: 1000px; margin: 0 auto; padding: 12px 20px; }
 nav .brand { font-family: 'Cinzel', Georgia, serif; font-weight: 600; font-size: 23px; color: #1F2D4D; text-decoration: none; margin-right: 10px; letter-spacing: .06em; display: inline-flex; align-items: center; gap: 10px; }
 nav .brandlogo { height: 30px; width: auto; display: block; }
@@ -15,11 +15,11 @@ nav ul.menu a.btn:hover { text-decoration: none; opacity: .9; }
 ul.sub { display: none; position: absolute; top: 100%; left: 0; z-index: 10; background: #F4F1EA; border: 1px solid #000; list-style: none; margin: 0; padding: 6px 0; min-width: 200px; }
 li.has-sub:hover ul.sub, li.has-sub:focus-within ul.sub { display: block; }
 ul.sub li a { display: block; padding: 5px 14px; white-space: nowrap; }
-main { max-width: 1000px; margin: 0 auto; padding: 26px 20px 60px; }
+main { max-width: 1000px; margin: 0 auto; padding: 46px 20px 60px; }
 .crumb { font-size: 13px; color: #6b6657; margin: 0 0 4px; text-transform: uppercase; letter-spacing: .08em; }
 h1 { font-size: 30px; font-weight: 600; margin: 0; }
 .accent { width: 54px; height: 3px; background: #BB9F64; border-radius: 2px; margin: 16px 0 0; }
-.intro { color: #4a463c; margin: 22px 0 8px; font-size: 17px; max-width: 72ch; }
+.intro { color: #4a463c; margin: 22px 0 8px; font-size: 17px; max-width: 72ch; text-align: justify; }
 section { margin-top: 26px; }
 h2 { font-size: 20px; font-weight: 600; margin: 0 0 8px; border-bottom: 1px solid #d9d4c8; padding-bottom: 4px; }
 .ph { border: 1px dashed #b3ac9c; color: #5a5445; padding: 14px 16px; margin: 6px 0; }
@@ -107,6 +107,13 @@ footer { border-top: 1px solid #000; margin-top: 40px; }
 .fcol a:hover { text-decoration: underline; }
 .fdisc { border-top: 1px solid #d9d4c8; margin-top: 24px; padding-top: 16px; font-size: 12px; color: #8a8577; line-height: 1.6; }
 .fdisc p { margin: 0 0 8px; max-width: 95ch; }
-.fo-cta-wrap { text-align: center; margin: 4px auto 8px; }
+.fo-cta-wrap { text-align: center; margin: 4px auto 40px; }
 .fo-cta { display: inline-block; background: #1F2D4D; color: #F4F1EA; text-decoration: none; border: 1px solid #1F2D4D; border-radius: 999px; padding: 13px 30px; font-weight: 600; font-size: 16px; }
 .fo-cta:hover { opacity: .9; }
+.helpgrid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin: 6px 0; }
+.helpcard { display: block; text-decoration: none; color: inherit; border: 1px solid #d9d4c8; background: #fffdf8; padding: 22px; transition: box-shadow .15s; }
+.helpcard:hover { box-shadow: 0 4px 16px rgba(31,45,77,.12); }
+.helpcard .hc-top { width: 40px; height: 4px; background: #BB9F64; border-radius: 2px; margin-bottom: 14px; }
+.helpcard h3 { font-size: 18px; font-weight: 600; margin: 0 0 6px; color: #1F2D4D; border: none; padding: 0; }
+.helpcard p { font-size: 14px; color: #4a463c; margin: 0; line-height: 1.5; }
+@media (max-width: 640px) { .helpgrid { grid-template-columns: 1fr; } }
