@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fortis &mdash; Who We Are</title>
+<title>Who We Are &middot; Fortis</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@300;400;500;600;700&display=swap">
@@ -41,6 +41,7 @@
 <main>
   <p class="crumb">Who We Are</p>
   <h1>Who We Are</h1>
+  <div class="accent"></div>
   <p class="intro">Single page; the header dropdown jumps to each section.</p>
   <section id="team"><h2>Team</h2><p class="subnote">Search the team by name or filter by category. Cards scroll horizontally.</p><div class="teamsearch"><input type="text" id="tsearch" placeholder="Search the team by name&hellip;" oninput="filterTeam()"><div class="chips" id="tchips"><button class="chip on" data-cat="all" onclick="chipTeam(this)">Everyone</button><button class="chip" data-cat="leadership" onclick="chipTeam(this)">Leadership</button><button class="chip" data-cat="advisor" onclick="chipTeam(this)">Advisors</button><button class="chip" data-cat="equity" onclick="chipTeam(this)">Equity / IPO</button><button class="chip" data-cat="owner" onclick="chipTeam(this)">Owners</button></div></div><div class="cardrow"><div class="tcard" data-cat="leadership" data-name="advisor one"><a class="tcard-link" href="advisor-1.html"><div class="photo"></div><div class="body"><div class="name">Advisor One</div><div class="role">Title &middot; Designations</div><div class="cmeta">Bellevue, WA &middot; 20+ yrs experience</div></div></a><a class="book" href="advisor-1-schedule.html">Book a meeting &rarr;</a></div><div class="tcard" data-cat="advisor" data-name="advisor two"><a class="tcard-link" href="advisor-2.html"><div class="photo"></div><div class="body"><div class="name">Advisor Two</div><div class="role">Title &middot; Designations</div><div class="cmeta">Seattle, WA &middot; 10+ yrs experience</div></div></a><a class="book" href="advisor-2-schedule.html">Book a meeting &rarr;</a></div><div class="tcard" data-cat="equity" data-name="advisor three"><a class="tcard-link" href="advisor-3.html"><div class="photo"></div><div class="body"><div class="name">Advisor Three</div><div class="role">Title &middot; Designations</div><div class="cmeta">Mercer Island, WA &middot; 8+ yrs experience</div></div></a><a class="book" href="advisor-3-schedule.html">Book a meeting &rarr;</a></div><div class="tcard" data-cat="owner" data-name="advisor four"><a class="tcard-link" href="advisor-4.html"><div class="photo"></div><div class="body"><div class="name">Advisor Four</div><div class="role">Title &middot; Designations</div><div class="cmeta">Kirkland, WA &middot; Years of experience</div></div></a><a class="book" href="advisor-4-schedule.html">Book a meeting &rarr;</a></div></div><script>let teamCat='all';function applyTeam(){var q=(document.getElementById('tsearch').value||'').toLowerCase();document.querySelectorAll('.cardrow .tcard').forEach(function(c){var okCat=teamCat==='all'||c.dataset.cat===teamCat;var okName=c.dataset.name.indexOf(q)>-1;c.style.display=(okCat&&okName)?'':'none';});}function filterTeam(){applyTeam();}function chipTeam(b){teamCat=b.dataset.cat;document.querySelectorAll('#tchips .chip').forEach(function(x){x.classList.remove('on');});b.classList.add('on');applyTeam();}</script></section><section id="about"><h2>About</h2><div class="ph"><b>Placeholder.</b> Brief overview of the history of the company.</div></section><section id="philanthropic"><h2>Philanthropic</h2><div class="ph"><b>Placeholder.</b> The charitable giving the company does.</div></section><section id="testimonials"><h2>Client Testimonials</h2><div class="ph"><b>Placeholder.</b> Larger build-out of client testimonials.</div></section><section id="divisions"><h2>Our Divisions</h2><div class="ph"><b>Placeholder.</b> The different divisions of Fortis and how they fit together.</div><p class="links"><span class="lbl">Goes to:</span> <a href="under-one-roof.html">Under One Roof</a></p></section>
 </main>
@@ -69,7 +70,7 @@
       <p>Fortis Capital Management LLC DBA Fortis Financial Group is an SEC-registered investment adviser. Registration does not imply a certain level of skill or training. This website is limited to the dissemination of general information and should not be construed as personalized investment advice or a solicitation to buy or sell any security.</p>
       <p>Fortis does not and will never provide investment advice through WhatsApp or any social messaging platform.</p>
       <p>&copy; 2026 Fortis. All rights reserved. &nbsp;&middot;&nbsp; <a href="#">Disclosures / Form ADV</a> &nbsp;&middot;&nbsp; <a href="#">Privacy Policy</a></p>
-      <p><b>Prototype</b> &mdash; placeholders only. Not final copy, content, or design.</p>
+      <p><b>Prototype.</b> Placeholders only. Not final copy, content, or design.</p>
     </div>
   </div>
 </footer>
