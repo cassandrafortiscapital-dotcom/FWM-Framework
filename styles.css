@@ -43,23 +43,23 @@ h2 { font-size: 20px; font-weight: 600; margin: 0 0 8px; border-bottom: 1px soli
 .statbar .stat:first-child { border-left: none; }
 .statbar .num { font-size: 36px; font-weight: 300; color: #2a2f38; line-height: 1.1; }
 .statbar .lbl2 { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: #8a8577; margin-top: 8px; }
-.cardrow, .blogrow { display: flex; gap: 16px; overflow-x: auto; padding: 4px 2px 14px; scroll-snap-type: x mandatory; }
+.cardrow, .blogrow { display: flex; align-items: stretch; gap: 16px; overflow-x: auto; padding: 4px 2px 14px; scroll-snap-type: x mandatory; }
 .cardrow::-webkit-scrollbar, .blogrow::-webkit-scrollbar { height: 8px; }
 .cardrow::-webkit-scrollbar-thumb, .blogrow::-webkit-scrollbar-thumb { background: #d4cebf; border-radius: 4px; }
-.tcard { flex: 0 0 220px; scroll-snap-align: start; border: 1px solid #d9d4c8; background: #fffdf8; display: flex; flex-direction: column; }
+.tcard { flex: 1 0 200px; scroll-snap-align: start; border: 1px solid #d9d4c8; background: #fffdf8; display: flex; flex-direction: column; }
 .tcard-link { text-decoration: none; color: #000; }
 .tcard .photo { height: 150px; background: #e6e0d2; border-bottom: 1px solid #d9d4c8; }
 .tcard .body { padding: 12px 14px; }
 .tcard .name { font-weight: 600; font-size: 16px; }
 .tcard .role { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: #8a8577; margin-top: 5px; }
 .tcard .cmeta { font-size: 12px; color: #6b6657; margin-top: 6px; }
-.tcard .book { display: block; padding: 8px 14px 12px; font-size: 13px; text-decoration: none; color: #2a2f38; border-top: 1px solid #efe9db; }
+.tcard .book { display: block; margin-top: auto; padding: 8px 14px 12px; font-size: 13px; text-decoration: none; color: #2a2f38; border-top: 1px solid #efe9db; }
 .tcard .book:hover { text-decoration: underline; }
 .bcard { background: #fffdf8; border: 1px solid #d9d4c8; padding: 16px; }
 .bcard a { text-decoration: none; font-weight: 600; font-size: 17px; color: #000; }
 .bcard .meta { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: #8a8577; margin: 6px 0; }
 .bcard p { font-size: 14px; color: #4a463c; margin: 8px 0 0; }
-.blogrow .bcard { flex: 0 0 300px; scroll-snap-align: start; }
+.blogrow .bcard { flex: 1 0 220px; scroll-snap-align: start; }
 .teamsearch { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 2px 0 12px; }
 .teamsearch input { flex: 1; min-width: 220px; padding: 8px 10px; border: 1px solid #cfc9bc; background: #fffdf8; font: inherit; }
 .chips { display: flex; gap: 6px; flex-wrap: wrap; }
