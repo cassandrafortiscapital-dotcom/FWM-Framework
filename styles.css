@@ -1,5 +1,5 @@
 * { box-sizing: border-box; }
-html, body { overflow-x: hidden; }
+html, body { overflow-x: clip; }
 body { margin: 0; background: #F4F1EA; color: #000; font-family: 'Montserrat','Helvetica Neue',Arial,sans-serif; font-size: 16px; line-height: 1.5; }
 a { color: #000; }
 header { border-bottom: 1px solid #000; background: #F4F1EA; position: sticky; top: 0; z-index: 100; }
