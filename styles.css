@@ -116,12 +116,8 @@ footer { border-top: 1px solid #000; margin-top: 40px; }
 .fo-cta { display: inline-block; background: #1F2D4D; color: #F4F1EA; text-decoration: none; border: 1px solid #1F2D4D; border-radius: 999px; padding: 13px 30px; font-weight: 600; font-size: 16px; }
 .fo-cta:hover { opacity: .9; }
 .helpgrid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin: 6px 0; }
-.helpcard { display: block; text-decoration: none; color: inherit; border: 1px solid #d9d4c8; background: #fffdf8; padding: 22px; transition: box-shadow .15s; }
-.helpcard:hover { box-shadow: 0 4px 16px rgba(31,45,77,.12); }
-.helpcard .hc-logo { height: 120px; display: flex; align-items: center; justify-content: center; margin: 0 0 18px; }
-.helpcard .hc-logo img { max-height: 100%; max-width: 85%; width: auto; display: block; }
-.helpcard .hc-logo-ph { border: 1px dashed #d9d4c8; color: #b3ac9c; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; }
-.helpcard .hc-top { width: 40px; height: 4px; background: #BB9F64; border-radius: 2px; margin-bottom: 14px; }
-.helpcard h3 { font-size: 18px; font-weight: 600; margin: 0 0 6px; color: #1F2D4D; border: none; padding: 0; }
-.helpcard p { font-size: 14px; color: #4a463c; margin: 0; line-height: 1.5; }
-@media (max-width: 640px) { .helpgrid { grid-template-columns: 1fr; } }
+.helpcard { display: flex; align-items: center; justify-content: center; aspect-ratio: 1 / 1; padding: 18%; text-decoration: none; background: transparent; border: 1px solid #d9d4c8; transition: border-color .15s; }
+.helpcard:hover { border-color: #BB9F64; }
+.helpcard img { max-width: 100%; max-height: 100%; width: auto; height: auto; display: block; }
+.helpcard.hc-ph { color: #b3ac9c; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; border-style: dashed; }
+@media (max-width: 640px) { .helpgrid { gap: 10px; } .helpcard { padding: 12%; } }
