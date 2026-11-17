@@ -48,7 +48,8 @@ h2 { font-size: 20px; font-weight: 600; margin: 0 0 8px; border-bottom: 1px soli
 .cardrow::-webkit-scrollbar-thumb, .blogrow::-webkit-scrollbar-thumb { background: #d4cebf; border-radius: 4px; }
 .tcard { flex: 1 0 200px; scroll-snap-align: start; border: 1px solid #d9d4c8; background: #fffdf8; display: flex; flex-direction: column; }
 .tcard-link { text-decoration: none; color: #000; }
-.tcard .photo { height: 150px; background: #e6e0d2; border-bottom: 1px solid #d9d4c8; }
+.tcard .photo { height: 150px; background: #e6e0d2; border-bottom: 1px solid #d9d4c8; overflow: hidden; }
+.tcard .photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 12%; display: block; }
 .tcard .body { padding: 12px 14px; }
 .tcard .name { font-weight: 600; font-size: 16px; }
 .tcard .role { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: #8a8577; margin-top: 5px; }
