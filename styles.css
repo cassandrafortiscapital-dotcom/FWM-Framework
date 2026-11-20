@@ -17,7 +17,7 @@ li.has-sub:hover ul.sub, li.has-sub:focus-within ul.sub { display: block; }
 ul.sub li a { display: block; padding: 5px 14px; white-space: nowrap; }
 main { max-width: 1000px; margin: 0 auto; padding: 46px 20px 60px; }
 .crumb { font-size: 13px; color: #6b6657; margin: 0 0 4px; text-transform: uppercase; letter-spacing: .08em; }
-h1 { font-size: 30px; font-weight: 600; margin: 0; }
+h1 { font-size: 30px; font-weight: 600; margin: 0; color: var(--ink); }
 .accent { width: 54px; height: 3px; background: #BB9F64; border-radius: 2px; margin: 16px 0 0; }
 .intro { color: #4a463c; margin: 22px 0 8px; font-size: 17px; max-width: 72ch; text-align: justify; }
 section { margin-top: 26px; }
@@ -28,7 +28,7 @@ section { margin-top: 26px; }
 .fo-sections > section + section { margin-top: 56px; }
 .fo-sections > section > h2 { border-bottom: none; padding-bottom: 0; margin: 0 0 26px; color: var(--ink); font-size: 24px; }
 .fo-sections > section > h2::after { content: ""; display: block; width: 44px; height: 3px; background: var(--brass); border-radius: 2px; margin-top: 12px; }
-h2 { font-size: 20px; font-weight: 600; margin: 0 0 8px; border-bottom: 1px solid #d9d4c8; padding-bottom: 4px; }
+h2 { font-size: 20px; font-weight: 600; color: var(--ink); margin: 0 0 8px; border-bottom: 1px solid #d9d4c8; padding-bottom: 4px; }
 .ph { border: 1px dashed #b3ac9c; color: #5a5445; padding: 14px 16px; margin: 6px 0; }
 .ph b { color: #000; }
 .links { margin: 8px 0 0; font-size: 15px; }
@@ -38,7 +38,7 @@ h2 { font-size: 20px; font-weight: 600; margin: 0 0 8px; border-bottom: 1px soli
 .bodytext { color: #4a463c; max-width: 68ch; }
 .hero { padding: 24px 0 6px; }
 .eyebrow { font-size: 12px; letter-spacing: .22em; text-transform: uppercase; color: #8a8577; }
-.herotitle { font-size: 42px; font-weight: 600; line-height: 1.04; margin: 10px 0 10px; max-width: 18ch; }
+.herotitle { font-size: 42px; font-weight: 600; color: var(--ink); line-height: 1.04; margin: 10px 0 10px; max-width: 18ch; }
 .herosub { color: #4a463c; font-size: 18px; max-width: 58ch; margin: 0 0 18px; }
 .herocta { display: flex; gap: 12px; flex-wrap: wrap; }
 .btnp { background: #2a2f38; color: #F4F1EA; text-decoration: none; padding: 10px 20px; border: 1px solid #2a2f38; }
@@ -71,7 +71,7 @@ h2 { font-size: 20px; font-weight: 600; margin: 0 0 8px; border-bottom: 1px soli
 .tmodal::backdrop { background: rgba(14,37,54,.55); }
 .tmodal[open] { display: grid; grid-template-columns: 240px 1fr; }
 .tm-x { position: absolute; top: 8px; right: 12px; border: none; background: none; font-size: 28px; color: var(--ink); cursor: pointer; line-height: 1; }
-.tm-photo { position: relative; overflow: hidden; background: #e6e0d2; min-height: 340px; border-right: 3px solid var(--brass); }
+.tm-photo { position: relative; overflow: hidden; background: radial-gradient(circle at 50% 35%, #F3F7FA 0%, var(--foam) 40%, #B9C8D4 100%); min-height: 340px; border-right: 3px solid var(--brass); }
 .tm-photo img { position: absolute; width: auto; max-width: none; display: block; }
 .tm-body { padding: 30px 32px 28px; }
 .tm-body h3 { margin: 0; font-size: 22px; color: var(--ink); }
